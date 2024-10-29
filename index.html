@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-800 from-teal-400  flex items-center justify-center min-h-screen p-4">
+    <div class="grid grid-cols-4 gap-4 p-6 rounded-lg shadow-lg bg-white max-w-sm w-full" data-aos="fade-up">
+        <div class="col-span-4 bg-gray-800 p-4 rounded-lg shadow-md">
+            <input class="w-full bg-gray-900 text-white text-right text-5xl p-4 rounded-lg" type="text" id="result" placeholder="0" readonly data-aos="fade-down">
+        </div>
+
+        <!-- Botones de la calculadora -->
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in">1</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="100">2</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="200">3</button>
+        <button class="bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 text-3xl p-4 transition" name="data-opera" data-aos="zoom-in" data-aos-delay="300">+</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="400">4</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="500">5</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="600">6</button>
+        <button class="bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 text-3xl p-4 transition" name="data-opera" data-aos="zoom-in" data-aos-delay="700">-</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="800">7</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="900">8</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="1000">9</button>
+        <button class="bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 text-3xl p-4 transition" name="data-opera" data-aos="zoom-in" data-aos-delay="1100">/</button>
+        <button class="bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 text-3xl p-4 transition" name="data-delete" data-aos="zoom-in" data-aos-delay="1200">C</button>
+        <button class="bg-gray-200 hover:bg-gray-300 rounded-lg shadow-md text-3xl p-4 transition" name="data-number" data-aos="zoom-in" data-aos-delay="1300">0</button>
+        <button class="bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 text-3xl p-4 transition" name="data-igual" data-aos="zoom-in" data-aos-delay="1400">=</button>
+        <button class="bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 text-3xl p-4 transition" name="data-opera" data-aos="zoom-in" data-aos-delay="1500">*</button>
+    </div>
+
+    <script src="calculadora.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="efecto.js"></script>
+</body>
+</html>
